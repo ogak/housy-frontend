@@ -2,36 +2,20 @@
 version: '3.9'
 services:
   frontend-1:
-    container_name: frontend
+    container_name: frontend-1
     image: ogak/housy:1.0
     stdin_open: true
     ports:
       - 3000:3000
   frontend-2:
-    container_name: frontend
+    container_name: frontend-2
     image: ogak/housy:1.0
     stdin_open: true
     ports:
       - 3100:3000
   frontend-3:
-    container_name: frontend
+    container_name: frontend-3
     image: ogak/housy:1.0
     stdin_open: true
     ports:
       - 3200:3000
-  
-  backend-1:
-    container_name: backend
-    image: ogak/housy-backend:1.0
-    ports:
-      - 5000:5000
-  backend-2:
-    container_name: backend
-    image: ogak/housy-backend:1.0
-    ports:
-      - 5100:5000
-  backend-3:
-    container_name: backend
-    image: ogak/housy-backend:1.0
-    ports:
-      - 5200:5000
